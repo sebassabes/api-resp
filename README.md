@@ -24,3 +24,6 @@ Twitter : https://twitter.com/domini_code
 Suscribete al canal: https://www.youtube.com/c/DominiCode?sub_confirmation=1 
 
 # api-resp
+En la carpeta la config en public deben cambiar la direccion de la base de datos y la contraseña
+#detalle
+esta aplicacion se hizo en framework slim, tiene 3 funciones para consultar usuarios,lista de formulario y el ingreso de este formulario a la base de datos, cabe recalcal que los datos se envian en json.
