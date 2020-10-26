@@ -114,3 +114,35 @@ $app->post('/api/formulario/consulta/',function(Request $request, Response $resp
 
 }); 
 
+$app->post('/api/formulario/existe/',function(Request $request, Response $response){
+	
+	 $correo=$request->getParam('correo');
+	 $fecha=$request->getParam('fecha');
+     $sql = "select * from test where correo='$correo' and month(now())=month('$fecha');";
+     
+	 try{
+     $db = new mysqli("localhost", "root", "explora2017", "test-autofact");
+	 $id_hilo = $db->thread_id;
+    // esto es necesario a la hora de recuperar datos en utf 8
+    mysqli_set_charset($db, "utf8");
+	$resultado = mysqli_query($db,$sql);
+  $respuesta = array();
+	   if ( !empty($resultado) AND mysqli_num_rows($resultado) > 0){
+     while($fila = $resultado->fetch_assoc()) {
+      $respuesta[] = $fila;
+  }
+      echo json_encode($respuesta, JSON_UNESCAPED_UNICODE );
+	   } else echo json_encode($respuesta, JSON_UNESCAPED_UNICODE );
+
+  
+    $resultado = null;
+    $db->kill($id_hilo);
+	$db->close();
+	
+  }catch(PDOException $e){
+    echo '{"error" : {"text":'.$e->getMessage().'}';
+  }
+
+ 
+
+}); 
