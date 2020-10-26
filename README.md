@@ -30,3 +30,17 @@ En la carpeta la config en public deben cambiar la direccion de la base de datos
 # Especificacion de la API_REST
 
 Esta aplicacion fue realizada en framework slim, tiene 3 funciones para consultar usuarios,lista de formulario y el ingreso de este formulario a la base de datos, cabe recalcal que los datos se envian en json.
+
+#  Usuarios y Contraseñas
+
+##  administrador
+user:admin@autofact.cl
+password: adimin2020
+
+## usuarios clientes
+
+user: sebastian.andres.aracena@gmail.com
+password: user2020
+
+user: supersbx00@gmail.com
+password: user2021

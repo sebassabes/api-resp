@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-10-2020 a las 16:15:53
+-- Tiempo de generación: 26-10-2020 a las 18:22:17
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -42,9 +42,7 @@ CREATE TABLE `test` (
 --
 
 INSERT INTO `test` (`id_formulario`, `correo`, `p1`, `p2`, `p3`, `fecha`) VALUES
-(1, 'sebastian.andres.aracena@gmail.com', 'bal bala', 'bien', '5', '2020-10-26 00:00:42'),
-(7, 'sebastian.andres.aracena@gmail.com', 'aadasd asdasdsasdasda ', 'SI', '4', '2020-10-26 00:56:47'),
-(8, 'sebastian.andres.aracena@gmail.com', 'aadasd asdasdsasdasda ', 'SI', '4', '2020-10-26 00:56:51');
+(1, 'sebastian.andres.aracena@gmail.com', 'bal bala', 'bien', '5', '2020-10-26 00:00:42');
 
 -- --------------------------------------------------------
 
@@ -65,8 +63,8 @@ CREATE TABLE `usuario` (
 
 INSERT INTO `usuario` (`correo`, `password`, `tipo`, `fecha`) VALUES
 ('admin@autofact.cl', '4441e5d70b3657900fa57e66db407e0b', 'admin', '2020-10-25 00:00:00'),
-('sebastian.andres.aracena@gmail.com', '1906c2268667fd33471e4b589e64cbbf', 'usuario', '2020-10-25 00:00:00'),
-('supersbx00@gmail.com', '98b01be2d96e5eafef66db258107caf4', 'usuario', '2020-10-25 00:00:00');
+('sebastian.andres.aracena@gmail.com', '7a4f994cbc99a38463b415fc13310b89', 'usuario', '2020-10-25 00:00:00'),
+('supersbx00@gmail.com', 'a13e7d4df150d90e60853f87d5abe94b', 'usuario', '2020-10-25 00:00:00');
 
 --
 -- Índices para tablas volcadas
