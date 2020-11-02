@@ -2,7 +2,7 @@
   class db{
     private $dbHost ='localhost';
     private $dbUser = 'root';
-    private $dbPass = 'explora2017';
+    private $dbPass = '';
     private $dbName = 'test-autofact';
     //conección 
     public function conectDB(){
