@@ -57,7 +57,7 @@ $app->post('/api/usuario/login/',function(Request $request, Response $response){
     $correo=$request->getParam('correo');
   $sql = "select * from usuario where correo='$correo' and password=md5('$password');";
  try{
-     $db = new mysqli("localhost", "root", "explora2017", "test-autofact");
+     $db = new mysqli("localhost", "root", "", "test-autofact");
 	 $id_hilo = $db->thread_id;
     // esto es necesario a la hora de recuperar datos en utf 8
     mysqli_set_charset($db, "utf8");
@@ -88,7 +88,7 @@ $app->post('/api/formulario/consulta/',function(Request $request, Response $resp
      $sql = "select * from test;";
      
 	 try{
-     $db = new mysqli("localhost", "root", "explora2017", "test-autofact");
+     $db = new mysqli("localhost", "root", "", "test-autofact");
 	 $id_hilo = $db->thread_id;
     // esto es necesario a la hora de recuperar datos en utf 8
     mysqli_set_charset($db, "utf8");
@@ -121,7 +121,7 @@ $app->post('/api/formulario/existe/',function(Request $request, Response $respon
      $sql = "select * from test where correo='$correo' and month(now())=month('$fecha');";
      
 	 try{
-     $db = new mysqli("localhost", "root", "explora2017", "test-autofact");
+     $db = new mysqli("localhost", "root", "", "test-autofact");
 	 $id_hilo = $db->thread_id;
     // esto es necesario a la hora de recuperar datos en utf 8
     mysqli_set_charset($db, "utf8");
