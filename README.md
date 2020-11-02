@@ -26,7 +26,7 @@ Suscribete al canal: https://www.youtube.com/c/DominiCode?sub_confirmation=1
 # api-resp
 
 En la carpeta la config en public ubicado en `./src/config/db.php` deben cambiar la direccion de la base de datos y la contraseña.
-Tambien en las otras funciones adentro cambiar  `./src/config/db.php`
+Tambien en las otras funciones adentro cambiar en el archivo `./src/autofact/formulario.php` cambiar configuracion base de datos lineas `60,91,124`.
 
 # Especificacion de la API_REST
 
